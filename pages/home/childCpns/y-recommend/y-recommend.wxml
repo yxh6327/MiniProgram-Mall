@@ -1,0 +1,9 @@
+<!--pages/home/childCpns/y-recommend/y-commend.wxml-->
+<view class="recommend">
+    <block wx:for="{{recommends}}" wx:key="index">
+        <view class="recommend-item">
+            <image src="{{item.image}}"></image>
+            <view class="recommend-item-title">{{item.title}}</view>
+        </view>
+    </block> 
+</view>

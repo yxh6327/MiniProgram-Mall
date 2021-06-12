@@ -1,6 +1,14 @@
 <!--pages/home/home.wxml-->
-<swiper>
-  <swiper-item>
-      <image src=""></image>
-    </swiper-item>
-</swiper>
+<!-- 轮播图 -->
+<y-swiper list="{{binners}}"></y-swiper>
+
+<!-- 推荐模块 -->
+<y-recommend recommends="{{recommends}}"></y-recommend>
+
+<!-- 本周流行 -->
+<y-popular></y-popular>
+
+<!-- 导航条 -->
+<y-tab-control titles="{{titles}}"
+               bind:itemClick="handleTabcontrolClick">
+</y-tab-control>
