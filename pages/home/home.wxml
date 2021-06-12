@@ -1,0 +1,6 @@
+<!--pages/home/home.wxml-->
+<swiper>
+  <swiper-item>
+      <image src=""></image>
+    </swiper-item>
+</swiper>
