@@ -3,12 +3,28 @@
 <y-swiper list="{{binners}}"></y-swiper>
 
 <!-- 推荐模块 -->
-<y-recommend recommends="{{recommends}}"></y-recommend>
+<y-recommend recommends="{{recommends}}"
+             bind:recImgLoad="handleRecImgLoad"></y-recommend>
 
 <!-- 本周流行 -->
 <y-popular></y-popular>
 
 <!-- 导航条 -->
 <y-tab-control titles="{{titles}}"
-               bind:itemClick="handleTabcontrolClick">
+               bind:itemClick="handleTabcontrolClick"
+               wx:if="{{isTabcontrolShow}}"
+               class="tab-control">
 </y-tab-control>
+
+<!-- 导航条之暗度陈仓 -->
+<y-tab-control titles="{{titles}}"
+               bind:itemClick="handleTabcontrolClick"
+               id="tab-control">
+</y-tab-control>
+
+<!-- 展示商品 -->
+<y-good good="{{goods[currentType].list}}"></y-good>
+
+<!-- 回到顶部 -->
+<y-backtop bindtap="handleBacktop"
+           wx:if="{{isBacktopShow}}"></y-backtop>

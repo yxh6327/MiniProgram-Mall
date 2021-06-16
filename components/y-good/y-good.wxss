@@ -1,0 +1,12 @@
+/* components/y-good/y-good.wxss */
+.good{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.good-item{
+    position: relative;
+    width: 46%;
+    height: 620rpx;
+    margin-top: 20rpx;
+}

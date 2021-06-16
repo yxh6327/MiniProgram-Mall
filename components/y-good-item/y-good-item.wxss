@@ -1,0 +1,34 @@
+/* components/y-good-item/y-good-item.wxss */
+.good-image{
+    width: 100%;
+    border-radius: 10rpx;
+}
+.good-title{
+    height: 45rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 32rpx;
+    margin-top: 10rpx;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.good-price{
+    color: #ff5777;
+    font-size: 32rpx;
+}
+.good-cfav{
+    font-size: 32rpx;
+}
+.cfav-image{
+    width: 35rpx;
+    height: 35rpx;
+    margin-top: 5rpx;
+    margin-left: 10rpx;
+}
+.desc{
+    position: absolute;
+    left: 0;
+    bottom: 0rpx;
+}

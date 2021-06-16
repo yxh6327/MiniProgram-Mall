@@ -1,0 +1,5 @@
+<!--components/y-backtop/y-backtop.wxml-->
+<view class="backtop">
+    <image src="/assets/common/top.png"
+           class="backtop-image"></image>
+</view>

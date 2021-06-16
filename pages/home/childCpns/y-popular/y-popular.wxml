@@ -1,5 +1,6 @@
 <!--components/y-popular/y-popular.wxml-->
 <view class="popular">
     <image src="/assets/home/popular_bg.jpg"
-           mode="widthFix"></image>
+           mode="widthFix"
+           class="pop-image"></image>
 </view>

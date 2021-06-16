@@ -1,7 +1,7 @@
 // pages/home/home.js
 // const app = getApp();
 import {getMultiData,getHomeGoods} from "../../service/home"
-
+const type = ['pop','new','sell']
 Page({
 
     /**
@@ -12,11 +12,14 @@ Page({
         recommends: [],
         titles: ['流行','新款','精选'],
         goods: {
-            'pop': {page: 1, list: []},
-            'new': {page: 1, list: []},
-            'sell': {page: 1, list: []}
+            'pop': {page: 0, list: []},
+            'new': {page: 0, list: []},
+            'sell': {page: 0, list: []}
         },
-        currentIndex: 0
+        currentType: 'pop',
+        isBacktopShow: false,
+        isTabcontrolShow: false,
+        tabcontrolToTop: 0
     },
 
     /**
@@ -69,7 +72,7 @@ Page({
      * 页面上拉触底事件的处理函数
      */
     onReachBottom: function () {
-
+        this._getHomeGoods(this.data.currentType);
     },
 
     /**
@@ -77,6 +80,20 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+    onPageScroll(options) {
+        const backtoptemp = options.scrollTop >= 1000 ? true : false;
+        if(backtoptemp !== this.data.isBacktopShow) {
+            this.setData({
+                isBacktopShow: backtoptemp
+            })
+        }
+        const tabcontroltemp = options.scrollTop >= this.data.tabcontrolToTop ? true : false;
+        if(tabcontroltemp !== this.data.isTabcontrolShow) {
+            this.setData({
+                isTabcontrolShow: tabcontroltemp
+            })
+        }
     },
 
     //------------------网络请求的函数-------------------------
@@ -110,7 +127,19 @@ Page({
     handleTabcontrolClick(event) {
         const index = event.detail.index;
         this.setData({
-            currentIndex: index
+            currentType: type[index]
         })
+    },
+    handleBacktop() {
+        wx.pageScrollTo({
+            scrollTop: 0
+        })
+    },
+    handleRecImgLoad() {
+        wx.createSelectorQuery().select('#tab-control').boundingClientRect(rect => {
+            this.setData({
+                tabcontrolToTop: rect.top
+            })
+        }).exec()
     }
 })

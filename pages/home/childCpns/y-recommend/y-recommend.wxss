@@ -10,7 +10,7 @@
     text-align: center;
     font-size: 30rpx;
 }
-.recommend-item image{
+.rec-image{
     width: 150rpx;
     height: 150rpx;
 }

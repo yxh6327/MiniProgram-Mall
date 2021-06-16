@@ -1,0 +1,17 @@
+<!--components/y-good-item/y-good-item.wxml-->
+<view class="good-item">
+    <view>
+        <image src="{{item.show.img}}"
+               mode="widthFix"
+               class="good-image"></image>
+    </view>
+    <view class="desc">
+        <view class="good-title">{{item.title}}</view>
+        <view class="text">
+            <view class="good-price">￥{{item.price}}</view>
+            <image class="cfav-image"
+                src="/assets/common/favor.png"></image>
+            <view class="good-cfav">{{item.cfav}}</view>
+        </view>
+    </view>
+</view>

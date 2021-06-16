@@ -1,4 +1,4 @@
 /* components/y-swiper/y-swiper.wxss */
-.swiper-item image{
+.swiper-image{
     width: 100%;
 }
