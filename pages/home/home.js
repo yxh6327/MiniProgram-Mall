@@ -81,6 +81,7 @@ Page({
     onShareAppMessage: function () {
 
     },
+    //tabcontrol和backtop的显示和隐藏
     onPageScroll(options) {
         const backtoptemp = options.scrollTop >= 1000 ? true : false;
         if(backtoptemp !== this.data.isBacktopShow) {
@@ -97,6 +98,7 @@ Page({
     },
 
     //------------------网络请求的函数-------------------------
+    //请求首页的多个数据
     _getMultiData() {
         getMultiData().then((res) => {
             const multidata = res.data.data;
@@ -106,6 +108,7 @@ Page({
             })
         })
     },
+    //请求商品数据
     _getHomeGoods(type) {
         const page = this.data.goods[type].page + 1;
         getHomeGoods(type,page).then((res) => {
@@ -124,17 +127,20 @@ Page({
 
 
     // ------------------事件监听的函数-------------------------
+    //点击tabcontrol切换到不同的商品
     handleTabcontrolClick(event) {
         const index = event.detail.index;
         this.setData({
             currentType: type[index]
         })
     },
+    //返回顶部按钮点击
     handleBacktop() {
         wx.pageScrollTo({
             scrollTop: 0
         })
     },
+    //推荐图片加载完成后获取tabcontrol距离顶端的距离
     handleRecImgLoad() {
         wx.createSelectorQuery().select('#tab-control').boundingClientRect(rect => {
             this.setData({

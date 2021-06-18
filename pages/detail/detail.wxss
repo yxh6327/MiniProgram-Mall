@@ -1,0 +1,14 @@
+/* pages/detail/detail.wxss */
+.detail-tabcontrol{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+}
+.swipper{
+    position: fixed;
+    top: 0;
+    bottom: 100rpx;
+}

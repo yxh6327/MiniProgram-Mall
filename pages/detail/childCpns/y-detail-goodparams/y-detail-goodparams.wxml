@@ -1,0 +1,13 @@
+<!--pages/detail/childCpns/y-detail-goodparams/y-detail-goodparams.wxml-->
+<view class="good-params">
+    <block wx:for="{{goodParams}}" wx:key="index">
+        <view class="param-item">
+            <view class="param-key">
+                <text>{{item.key}}</text>
+            </view>
+            <view class="param-value">
+                <text>{{item.value}}</text>
+            </view>
+        </view>
+    </block>
+</view>

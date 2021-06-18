@@ -1,0 +1,47 @@
+<!--pages/detail/detail.wxml-->
+<!-- 详情页的tab-control -->
+<y-tab-control titles="{{titles}}"
+               class="detail-tabcontrol"
+               wx:if="{{isTabcontrolShow}}"
+               bind:itemClick="tabcontrolClick"></y-tab-control>
+
+<scroll-view class="swipper"
+             scroll-y
+             bindscroll="bindscroll"
+             scroll-top="{{topPosition}}"
+             scroll-with-animation="true">
+    <!-- 顶部的轮播图 -->
+    <y-swiper list="{{topImage}}"
+            class="detail-swiper"
+            swiperHeight="600"></y-swiper>
+
+    <!-- 商品基本信息 -->
+    <y-detail-baseinfo goods="{{goods}}"></y-detail-baseinfo>
+
+    <!-- 店铺信息 -->
+    <y-detail-shopInfo shop="{{shop}}"></y-detail-shopInfo>
+
+    <!-- 商品详细图片 -->
+    <y-detail-image detailImage="{{detailImage}}"
+                    bind:imageLoaded="imageLoaded"></y-detail-image>
+
+    <!-- 商品参数 -->
+    <y-detail-goodparams goodParams="{{goodParams}}"
+                         id="good-params"></y-detail-goodparams>
+
+    <!-- 商品评论 -->
+    <y-detail-comment comment="{{comment}}"
+                      id="comment"></y-detail-comment>
+
+    <!-- 推荐商品 -->
+    <y-good good="{{recommend}}"
+            id="recommend"></y-good>
+</scroll-view>
+
+
+<!-- 底部导航栏 -->
+<y-detail-bottombar></y-detail-bottombar>
+
+<!-- 返回顶部按钮 -->
+<y-backtop bindtap="handleBacktop"
+            wx:if="{{isBacktopShow}}"></y-backtop>

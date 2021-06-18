@@ -2,6 +2,8 @@
 <view class="good">
     <block wx:for="{{good}}" wx:key="index">
         <y-good-item item="{{item}}"
-                     class="good-item"></y-good-item>
+                     class="good-item"
+                     bindtap="goodItemClick"
+                     data-iid="{{item.iid}}"></y-good-item>
     </block>
 </view>

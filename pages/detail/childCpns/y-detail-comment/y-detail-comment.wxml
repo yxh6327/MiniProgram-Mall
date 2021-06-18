@@ -1,0 +1,18 @@
+<!--pages/detail/childCpns/y-detail-comment/y-detail-comment.wxml-->
+<wxs src="../../../../utils/getDate.wxs" module="formatDate"></wxs>
+<view class="comment">
+    <view class="top">
+        <text>用户评价</text>
+        <text>更多</text>
+    </view>
+    <view class="middle">
+        <image src="{{comment.user.avatar}}"
+               class="userimage"></image>
+        <text>{{comment.user.uname}}</text>
+    </view>
+    <view class="middle2">{{comment.content}}</view>
+    <view class="bottom">
+        <text>{{formatDate.formatDate(comment.created)}}</text>
+        <text class="text2">{{comment.style}}</text>
+    </view>
+</view>

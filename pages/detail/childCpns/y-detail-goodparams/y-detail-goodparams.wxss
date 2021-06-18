@@ -1,0 +1,18 @@
+/* pages/detail/childCpns/y-detail-goodparams/y-detail-goodparams.wxss */
+.good-params{
+    padding: 0 15rpx;
+    border-bottom: 10rpx solid #eee;
+    font-size: 32rpx;
+}
+.param-item{
+    display: flex;
+    align-items: center;
+    padding: 30rpx 0;
+    border-bottom: 2rpx solid #eee;
+}
+.param-key{
+    width: 20%;
+}
+.param-value{
+    width: 80%;
+}

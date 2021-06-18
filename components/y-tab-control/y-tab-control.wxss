@@ -3,12 +3,12 @@
     display: flex;
     align-items: center;
     height: 88rpx;
-    font-size: 36rpx;
+    font-size: 32rpx;
 }
 .tab-control-item{
     flex: 1;
     text-align: center;
-    margin: 0 66rpx;
+    margin: 0 40rpx;
     padding-bottom: 16rpx;
 }
 .active{

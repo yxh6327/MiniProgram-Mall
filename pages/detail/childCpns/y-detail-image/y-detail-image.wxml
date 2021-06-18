@@ -1,0 +1,9 @@
+<!--pages/detail/childCpns/y-detail-image/y-detail-image.wxml-->
+<view class="detail-image">
+    <block wx:for="{{detailImage}}" wx:key="index">
+        <image src="{{item}}"
+               mode="widthFix"
+               class="image"
+               bindload="imageLoad"></image>
+    </block>
+</view>

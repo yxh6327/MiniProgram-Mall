@@ -1,0 +1,62 @@
+/* pages/detail/childCpns/y-detail-tabcontrol/y-detail-tabcontrol.wxss */
+.baseinfo{
+    border-bottom: 10rpx solid #eee;
+}
+.top{
+    height: 100rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 30rpx 15rpx;
+}
+.middle{
+    margin-left: 15rpx;
+}
+.newprice{
+    font-size: 50rpx;
+    color: #ff5777;
+    font-weight: 500;
+}
+.oldprice{
+    font-size: 32rpx;
+    color: #aaa;
+    text-decoration: line-through;
+    margin-left: 10rpx;
+}
+.discount{
+    font-size: 28rpx;
+    background-color: #ff5777;
+    color: #fff;
+    border-radius: 20rpx;
+    padding: 4rpx 15rpx;
+    margin-left: 10rpx;
+    /* 让元素上浮一些 */
+    position: relative;
+    top: -20rpx;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 15rpx;
+    line-height: 60rpx;
+    font-size: 32rpx;
+    border-bottom: 4rpx solid #ccc;
+    color: #666;
+}
+.service {
+    display: flex;
+    justify-content: space-between;
+    line-height: 120rpx;
+    padding: 0 15rpx;
+  }
+
+  .itemimage {
+    width: 32rpx;
+    height: 32rpx;
+    position: relative;
+    top: 2px;
+  }
+
+  .itemtext{
+    font-size: 28rpx;
+    color: #666;
+  }

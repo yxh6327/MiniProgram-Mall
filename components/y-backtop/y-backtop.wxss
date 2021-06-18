@@ -2,7 +2,7 @@
 .backtop{
     position: fixed;
     right: 20rpx;
-    bottom: 20rpx;
+    bottom: 120rpx;
 }
 .backtop-image{
     width: 100rpx;

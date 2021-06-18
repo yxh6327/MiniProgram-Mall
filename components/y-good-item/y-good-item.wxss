@@ -27,8 +27,8 @@
     margin-top: 5rpx;
     margin-left: 10rpx;
 }
-.desc{
+/* .desc{
     position: absolute;
     left: 0;
     bottom: 0rpx;
-}
+} */

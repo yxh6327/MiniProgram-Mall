@@ -1,16 +1,12 @@
-// components/y-swiper/y-swiper.js
+// pages/detail/childCpns/y-detail-goodparams/y-detail-goodparams.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        list: {
+        goodParams: {
             type: Array,
             value: []
-        },
-        swiperHeight: {
-            type: Number,
-            value: 320
         }
     },
 

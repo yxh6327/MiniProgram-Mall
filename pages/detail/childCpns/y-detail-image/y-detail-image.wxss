@@ -1,0 +1,7 @@
+/* pages/detail/childCpns/y-detail-image/y-detail-image.wxss */
+.detail-image{
+    border-bottom: 10rpx solid #eee;
+}
+.image{
+    width: 100%;
+}

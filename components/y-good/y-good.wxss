@@ -5,8 +5,8 @@
     justify-content: space-evenly;
 }
 .good-item{
-    position: relative;
+    /* position: relative; */
     width: 46%;
-    height: 620rpx;
+    /* height: 620rpx; */
     margin-top: 20rpx;
 }

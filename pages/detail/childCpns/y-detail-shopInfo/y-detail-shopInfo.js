@@ -1,16 +1,12 @@
-// components/y-swiper/y-swiper.js
+// pages/detail/childCpns/y-detail-shopInfo/y-detail-shopInfo.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        list: {
-            type: Array,
-            value: []
-        },
-        swiperHeight: {
-            type: Number,
-            value: 320
+        shop: {
+            type: Object,
+            value: {}
         }
     },
 

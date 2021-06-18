@@ -1,7 +1,7 @@
 <!--components/y-good-item/y-good-item.wxml-->
 <view class="good-item">
     <view>
-        <image src="{{item.show.img}}"
+        <image src="{{item.show.img || item.image}}"
                mode="widthFix"
                class="good-image"></image>
     </view>

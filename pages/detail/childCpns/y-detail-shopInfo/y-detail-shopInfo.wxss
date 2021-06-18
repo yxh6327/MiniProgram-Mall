@@ -1,0 +1,83 @@
+/* pages/detail/childCpns/y-detail-shopInfo/y-detail-shopInfo.wxss */
+.shop-info{
+    border-bottom: 10rpx solid #eee;
+}
+.top{
+    margin-top: 50rpx;
+    margin-left: 15rpx;
+}
+.logo{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 2rpx solid #ccc;
+}
+.name{
+    position: relative;
+    top: -36rpx;
+    left: 15rpx;
+}
+.middle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50rpx;
+}
+.left{
+    display: flex;
+    padding-right: 20rpx;
+    border-right: 2rpx solid #ccc;
+}
+.sell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20rpx;
+}
+.goodscount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20rpx;
+}
+.item{
+    font-size: 32rpx;
+    margin-top: 26rpx;
+}
+
+.right{
+    font-size: 32rpx;
+}
+.right-text{
+    margin: 5rpx 0;
+}
+.score{
+    display: inline-block;
+    margin-left: 10rpx;
+    width: 60rpx;
+    color: green;
+}
+.isbetter{
+    color: red;
+}
+.heigh{
+    margin-left: 10rpx;
+    color: green;
+}
+
+
+
+
+
+.bottom{
+    text-align: center;
+    padding: 50rpx 0;
+}
+.goshop{
+    padding: 10rpx 70rpx;
+    background-color: #eee;
+    border-radius: 15rpx;
+    font-size: 36rpx;
+}

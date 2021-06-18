@@ -1,0 +1,51 @@
+/* pages/detail/childCpns/y-detail-bottombar/y-detail-bottombar.wxss */
+.bottom-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100rpx;
+    background-color: #fff;
+    font-size: 32rpx;
+}
+.left{
+    display: flex;
+    justify-content: space-evenly;
+    width: 51%;
+    height: 100%;
+}
+.left-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    width: 49%;
+    height: 100%;
+}
+.img{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 6rpx 0;
+}
+.addcar{
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: yellow;
+}
+.buy{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: #ff5777;
+    color: #fff;
+}

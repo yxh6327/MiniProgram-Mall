@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "y-tab-control": "/components/y-tab-control/y-tab-control",
+    "y-swiper": "/components/y-swiper/y-swiper",
+    "y-detail-baseinfo": "/pages/detail/childCpns/y-detail-baseinfo/y-detail-baseinfo",
+    "y-detail-shopInfo": "/pages/detail/childCpns/y-detail-shopInfo/y-detail-shopInfo",
+    "y-detail-image": "/pages/detail/childCpns/y-detail-image/y-detail-image",
+    "y-detail-goodparams": "/pages/detail/childCpns/y-detail-goodparams/y-detail-goodparams",
+    "y-detail-comment": "/pages/detail/childCpns/y-detail-comment/y-detail-comment",
+    "y-good": "/components/y-good/y-good",
+    "y-detail-bottombar": "/pages/detail/childCpns/y-detail-bottombar/y-detail-bottombar",
+    "y-backtop": "/components/y-backtop/y-backtop"
+  }
+}
