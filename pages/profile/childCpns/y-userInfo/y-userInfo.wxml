@@ -1,0 +1,17 @@
+<!--pages/profile/childCpns/y-userInfo/y-userInfo.wxml-->
+<view class="user-info">
+    <view class="left">
+        <image src="/assets/profile/user-head.jpg"
+               class="user-head"
+               mode="widthFix"></image>
+    </view>
+    <view class="middle">
+        <text>龙龙龙龙龙小猫</text>
+        <text class="text2">登录/注册</text>
+    </view>
+    <view class="right">
+        <image src="/assets/profile/arrow-right.png"
+               class="arrow-right"
+               mode="widthFix"></image>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/profile/childCpns/y-userInfo/y-userInfo.wxss */
+.user-info{
+    display: flex;
+    align-items: center;
+    height: 200rpx;
+    background-color: #ff5777;
+}
+.left{
+    margin-left: 50rpx;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 30rpx;
+}
+.text2{
+    font-size: 32rpx;
+    margin-top: 10rpx;
+}
+.user-head{
+    width: 150rpx;
+    border-radius: 50%;
+}
+.right{
+    position: fixed;
+    right: 50rpx;
+    /* margin-left: 200rpx; */
+}
+.arrow-right{
+    width: 50rpx;
+}

@@ -1,4 +1,10 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-userInfo": "/pages/profile/childCpns/y-userInfo/y-userInfo",
+    "y-userOptions": "/pages/profile/childCpns/y-userOptions/y-userOptions",
+    "y-otherOptions": "/pages/profile/childCpns/y-otherOptions/y-otherOptions"
+
+
+  },
   "navigationBarTitleText": "我的主页"
 }

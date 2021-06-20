@@ -1,2 +1,10 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+
+<!-- 用户信息 -->
+<y-userInfo></y-userInfo>
+
+<!-- 用户选项 -->
+<y-userOptions></y-userOptions>
+
+<!-- 其他选项 -->
+<y-otherOptions></y-otherOptions>

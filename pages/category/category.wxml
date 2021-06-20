@@ -1,27 +1,36 @@
 <!--pages/category/category.wxml-->
+<!-- 左侧的选项卡 -->
 <scroll-view class="left"
              scroll-y>
     <y-category category="{{category}}"
                 bind:itemClick="itemClick"></y-category>
 </scroll-view>
-
+ 
+<!-- 右侧的 -->
 <scroll-view class="right"
              scroll-y
              scroll-top="{{topPosition}}"
              scroll-with-animation="true"
              bindscroll="bindscroll">
+    <!-- 子分类 -->
     <y-subcategory subCategory="{{subCategory}}"
                    bind:imageLoaded="handleImageLoaded"></y-subcategory>
+
+    <!-- tab-control -->
     <y-tab-control titles="{{titles}}"
                    bind:itemClick="handleTabcontrolClick"
                    id="category-tabcontrol1"></y-tab-control>
+
+    <!-- 商品 -->
     <y-good good="{{categoryDetail[currentType]}}"></y-good>
 </scroll-view>
 
+<!-- 上面的tab-control -->
 <y-tab-control titles="{{titles}}"
                bind:itemClick="handleTabcontrolClick"
                id="category-tabcontrol2"
                wx:if="{{isTabcontrolShow}}"></y-tab-control>
 
+<!-- 返回顶部 -->
 <y-backtop bindtap="handleBacktop"
             wx:if="{{isBacktopShow}}"></y-backtop>

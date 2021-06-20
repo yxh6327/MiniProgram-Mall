@@ -1,0 +1,19 @@
+/* pages/profile/childCpns/y-userOptions/y-userOptions.wxss */
+.user-options{
+    display: flex;
+    height: 100rpx;
+    padding: 50rpx 0;
+    border-bottom: 10rpx solid #eee;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 30%;
+    border-left: 2rpx solid #eee;
+    font-size: 32rpx;
+}
+.text2{
+    margin-top: 5rpx;
+}
