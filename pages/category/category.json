@@ -1,4 +1,10 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "y-category": "/pages/category/childCpns/y-category/y-category",
+    "y-subcategory": "/pages/category/childCpns/y-subcategory/y-subcategory",
+    "y-tab-control": "/components/y-tab-control/y-tab-control",
+    "y-good": "/components/y-good/y-good",
+    "y-backtop": "/components/y-backtop/y-backtop"
+  },
   "navigationBarTitleText": "商品分类"
 }

@@ -132,6 +132,13 @@ Page({
         const index = event.detail.index;
         this.setData({
             currentType: type[index]
+        });
+        //重新改变两个tabcontrol的currentIndex
+        this.selectComponent('#tab-control1').setData({
+            currentIndex: index
+        });
+        this.selectComponent('#tab-control2').setData({
+            currentIndex: index
         })
     },
     //返回顶部按钮点击
@@ -142,7 +149,7 @@ Page({
     },
     //推荐图片加载完成后获取tabcontrol距离顶端的距离
     handleRecImgLoad() {
-        wx.createSelectorQuery().select('#tab-control').boundingClientRect(rect => {
+        wx.createSelectorQuery().select('#tab-control1').boundingClientRect(rect => {
             this.setData({
                 tabcontrolToTop: rect.top
             })

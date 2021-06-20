@@ -1,0 +1,10 @@
+<!--pages/category/childCpns/y-category/y-category.wxml-->
+<view class="category">
+    <block wx:for="{{category}}" wx:key="index">
+        <view class="category-item {{currentIndex === index ? 'active' : ''}}"
+              bindtap="handleCategoryClick"
+              data-index="{{index}}">
+            {{item.title}}
+        </view>
+    </block>
+</view>

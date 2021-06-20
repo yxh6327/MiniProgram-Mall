@@ -1,0 +1,12 @@
+<!--pages/category/childCpns/y-subcategory/y-subcategory.wxml-->
+<view class="subcategory">
+    <block wx:for="{{subCategory}}" wx:key="index">
+        <view class="item">
+            <image src="{{item.image}}"
+                   mode="widthFix"
+                   class="image"
+                   bindload="imageLoad"></image>
+            <text class="text">{{item.title}}</text>
+        </view>
+    </block>
+</view>

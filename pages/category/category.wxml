@@ -1,2 +1,27 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<scroll-view class="left"
+             scroll-y>
+    <y-category category="{{category}}"
+                bind:itemClick="itemClick"></y-category>
+</scroll-view>
+
+<scroll-view class="right"
+             scroll-y
+             scroll-top="{{topPosition}}"
+             scroll-with-animation="true"
+             bindscroll="bindscroll">
+    <y-subcategory subCategory="{{subCategory}}"
+                   bind:imageLoaded="handleImageLoaded"></y-subcategory>
+    <y-tab-control titles="{{titles}}"
+                   bind:itemClick="handleTabcontrolClick"
+                   id="category-tabcontrol1"></y-tab-control>
+    <y-good good="{{categoryDetail[currentType]}}"></y-good>
+</scroll-view>
+
+<y-tab-control titles="{{titles}}"
+               bind:itemClick="handleTabcontrolClick"
+               id="category-tabcontrol2"
+               wx:if="{{isTabcontrolShow}}"></y-tab-control>
+
+<y-backtop bindtap="handleBacktop"
+            wx:if="{{isBacktopShow}}"></y-backtop>

@@ -4,7 +4,8 @@
     <view class="middle">
         <text class="newprice">{{goods.newPrice}}</text>
         <text class="oldprice">{{goods.oldPrice}}</text>
-        <text class="discount">{{goods.discount	}}</text>
+        <text class="discount"
+              wx:if="{{goods.discount !== ''}}">{{goods.discount}}</text>
     </view>
     <view class="bottom">
         <text>{{goods.columns[0]}}</text>

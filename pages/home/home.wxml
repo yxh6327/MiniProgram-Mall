@@ -13,13 +13,14 @@
 <y-tab-control titles="{{titles}}"
                bind:itemClick="handleTabcontrolClick"
                wx:if="{{isTabcontrolShow}}"
-               class="tab-control">
+               class="tab-control"
+               id="tab-control2">
 </y-tab-control>
 
 <!-- 导航条之暗度陈仓 -->
 <y-tab-control titles="{{titles}}"
                bind:itemClick="handleTabcontrolClick"
-               id="tab-control">
+               id="tab-control1">
 </y-tab-control>
 
 <!-- 展示商品 -->

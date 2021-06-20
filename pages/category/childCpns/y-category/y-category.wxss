@@ -1,0 +1,17 @@
+/* pages/category/childCpns/y-category/y-category.wxss */
+.category{
+    display: flex;
+    flex-direction: column;
+}
+.category-item{
+    height: 100rpx;
+    width: 100%;
+    font-size: 32rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #eee;
+}
+.active{
+    background-color: #fff;
+    color: #ff5777;
+}

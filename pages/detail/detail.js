@@ -131,7 +131,7 @@ Page({
         //滚动到响应的位置时，tabbar切换相应的标题
         for(let i = 0; i < 3; i++) {
             if(this.data.currentIndex !== i) {
-                if(toTop >= this.data.toTopDistance[i] && toTop <= this.data.toTopDistance[i+1]) {
+                if(toTop+50 >= this.data.toTopDistance[i] && toTop+50 <= this.data.toTopDistance[i+1]) {
                     this.setData({
                         currentIndex: i
                     });
@@ -143,7 +143,7 @@ Page({
             }
         };
         if(this.data.currentIndex !== 3) {
-            if(toTop >= this.data.toTopDistance[3]) {
+            if(toTop+50 >= this.data.toTopDistance[3]) {
                 this.setData({
                     currentIndex: 3
                 });
