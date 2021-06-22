@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "购物车"
+  "usingComponents": {
+    "y-cartlist-item": "/pages/cart/childCpns/y-cartlist-item/y-cartlist-item",
+    "y-bottombar": "/pages/cart/childCpns/y-bottombar/y-bottombar"
+  }
 }

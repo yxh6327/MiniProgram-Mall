@@ -1,4 +1,5 @@
 // pages/detail/detail.js
+const app = getApp();
 import {getGoodDetail,Goods,Shop,getRecommend} from '../../service/detail'
 
 Page({
@@ -95,7 +96,7 @@ Page({
     _getGoodDetail(iid) {
         getGoodDetail(iid).then(res => {
             const goodData = res.data.result;
-            console.log(goodData)
+            // console.log(goodData)
             this.setData({
                 topImage: goodData.itemInfo.topImages,
                 goods: new Goods(goodData.itemInfo, goodData.columns, goodData.shopInfo.services),
@@ -183,5 +184,28 @@ Page({
         this.setData({
             topPosition: this.data.toTopDistance[index]
         })
+    },
+    //加入购物车按钮点击
+    addCart() {
+        const currentGood = this.getGoodsInfo();
+        app.addToCart(currentGood).then((res) => {
+            wx.showToast({
+              title: res,
+              duration: 1000
+            })
+        });
+        console.log(app.globalData.cartList)
+    },
+    //拿到要传入购物车的商品数据
+    getGoodsInfo() {
+        const product = {};
+        product.iid = this.data.iid;
+        product.title = this.data.goods.title;
+        product.price = this.data.goods.realPrice;
+        product.img = this.data.topImage[0];
+        product.desc = this.data.goods.desc;
+        product.count = 0;
+        product.checked = false;
+        return product;
     }
 })

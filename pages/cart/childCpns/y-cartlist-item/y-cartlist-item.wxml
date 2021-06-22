@@ -1,0 +1,37 @@
+<!--pages/cart/childCpns/y-cartlist-item/y-cartlist-item.wxml-->
+<view class='cart-list-item'>
+    <view class='item-icon'>
+        <radio bindtap="changeBtn"
+               checked="{{cartListItem.checked}}"
+               data-iid="{{cartListItem.iid}}"
+               class="radio"
+               color="#ff5777"></radio>
+    </view>
+    <view class='item-img'>
+        <image src="{{cartListItem.img}}" 
+               mode='aspectFill'
+               bindtap="goDetail"
+               data-iid="{{cartListItem.iid}}"/>
+    </view>
+    <view class='item-info'>
+        <text class="delete"
+              bindtap="deleteGood"
+              data-iid="{{cartListItem.iid}}">删除</text>
+        <view class='title'>{{cartListItem.title}}</view>
+        <view class='desc'>{{cartListItem.desc}}</view>
+        <view class='price-count'>
+            <view class='price'>¥{{cartListItem.price}}</view>
+            <view class='count'>
+                <text class="addCount"
+                      bindtap="addCount"
+                      data-type="add"
+                      data-iid="{{cartListItem.iid}}">+</text>
+                <text class="goodCount">{{cartListItem.count}}</text>
+                <text class="subCount"
+                      bindtap="subCount"
+                      data-type="sub"
+                      data-iid="{{cartListItem.iid}}">-</text>
+            </view>
+        </view>
+    </view>
+</view>

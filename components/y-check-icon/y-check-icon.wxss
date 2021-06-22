@@ -1,0 +1,7 @@
+/* components/w-check-icon/w-check-icon.wxss */
+.check-icon {
+  border-radius: 20px;
+}
+.icon-border{
+  border: 2px solid balck;
+}

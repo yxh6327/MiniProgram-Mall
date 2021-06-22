@@ -40,7 +40,7 @@
 
 
 <!-- 底部导航栏 -->
-<y-detail-bottombar></y-detail-bottombar>
+<y-detail-bottombar bind:addCart="addCart"></y-detail-bottombar>
 
 <!-- 返回顶部按钮 -->
 <y-backtop bindtap="handleBacktop"

@@ -14,6 +14,25 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    cartList: []
+  },
+  addToCart(obj) {
+    //先判断一下是加入一个新商品还是旧商品的数量加一
+    return new Promise((resolve,reject) => {
+      const oldInfo = this.globalData.cartList.find((item) => item.iid === obj.iid);
+      if (oldInfo) {
+        oldInfo.count += 1;
+        resolve('商品数量+1');
+      } else {
+        obj.count = 1;
+        this.globalData.cartList.push(obj);
+        resolve('已加入购物车')
+      }
+
+      //购物车回调
+      // if (this.addCartCallback) {
+      //   this.addCartCallback()
+      // }
+    })
   }
 })

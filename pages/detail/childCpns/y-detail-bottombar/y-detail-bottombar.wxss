@@ -38,7 +38,7 @@
     height: 100%;
     text-align: center;
     line-height: 100rpx;
-    background-color: yellow;
+    background-color: #FCD00F;
 }
 .buy{
     display: inline-block;

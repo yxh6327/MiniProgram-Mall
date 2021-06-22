@@ -24,7 +24,7 @@
 .cfav-image{
     width: 35rpx;
     height: 35rpx;
-    margin-top: 5rpx;
+    margin-top: 6rpx;
     margin-left: 10rpx;
 }
 /* .desc{

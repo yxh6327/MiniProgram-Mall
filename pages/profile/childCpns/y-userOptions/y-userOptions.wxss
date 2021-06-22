@@ -17,3 +17,8 @@
 .text2{
     margin-top: 5rpx;
 }
+.num{
+    font-size: 40rpx;
+    font-weight: 700;
+    color: red;
+}

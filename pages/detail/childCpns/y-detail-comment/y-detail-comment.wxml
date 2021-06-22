@@ -1,5 +1,5 @@
 <!--pages/detail/childCpns/y-detail-comment/y-detail-comment.wxml-->
-<wxs src="../../../../utils/getDate.wxs" module="formatDate"></wxs>
+<wxs src="../../../../utils/util.wxs" module="formatDate"></wxs>
 <view class="comment">
     <view class="top">
         <text>用户评价</text>

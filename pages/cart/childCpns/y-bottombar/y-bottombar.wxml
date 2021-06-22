@@ -1,0 +1,13 @@
+<!--pages/cart/childCpns/y-bottombar/y-bottombar.wxml-->
+<wxs src="../../../../utils/util.wxs" module="formatPrice"></wxs>
+<view class="bottom-bar">
+    <view class="all-select">
+        <radio bindtap="changeAllBtn"
+               checked="{{isAllChecked}}"
+               class="select-btn"
+               color="#ff5777"></radio>
+        <text>全选</text>
+    </view>
+    <view class="total-price">合计：￥{{formatPrice.formatPrice(totalPrice)}}</view>
+    <view class="go-pay">结算({{count}})</view>
+</view>
